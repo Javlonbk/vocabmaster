@@ -59,6 +59,17 @@ Goal: quickly identify gaps in a target level (e.g., B2) and learn/refresh words
 
 
 
+
+## Learning MVP Loop (T006)
+- API endpoints (`/v1/learning`, bearer auth required):
+  - `GET /target-level`
+  - `PUT /target-level`
+  - `GET /session/words?count=20`
+  - `PATCH /words/:wordId/state`
+  - `GET /review/forgotten?count=20`
+  - `GET /progress`
+- Mobile screens: `HomeScreen`, `LevelSelectScreen`, `SessionScreen`, `SessionSummaryScreen`, `ReviewForgottenScreen`.
+
 ## Mobile Auth Flow (T005)
 - The mobile app includes:
   - `LoginScreen`

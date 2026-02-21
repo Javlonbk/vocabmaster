@@ -57,3 +57,9 @@ This file logs technical and product decisions that are not fully specified in `
 - Implemented Login/Signup/Home screens in `apps/mobile` with typed auth client integration.
 - Used in-app mode switching and authenticated conditional rendering instead of adding a navigation library at this stage.
 - Rationale: satisfy T005 flow requirements with minimal dependencies and keep foundation lightweight for subsequent MVP tickets.
+
+## 2026-02-21 — T006 learning loop implementation strategy
+- Added authenticated learning endpoints under `/v1/learning` for target level, session words, word-state updates, forgotten review queue, and progress stats.
+- Authenticated API routes use JWT bearer verification middleware and keep standardized API error format.
+- Mobile T006 flow uses local screen-state orchestration for `Home`, `LevelSelect`, `Session`, `SessionSummary`, and `ReviewForgotten` screens.
+- Rationale: deliver full MVP learning loop without introducing additional navigation/state libraries before stabilization.

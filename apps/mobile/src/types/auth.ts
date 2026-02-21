@@ -16,3 +16,4 @@ export type ApiErrorResponse = {
     details?: unknown;
   };
 };
+

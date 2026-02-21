@@ -2,9 +2,11 @@ import express, { type NextFunction, type Request, type Response, type Router } 
 
 import { authRouter } from './auth-routes';
 import { ApiError, toApiErrorBody } from './errors';
+import { learningRouter } from './learning-routes';
 
 type AppDeps = {
   authRoutes?: Router;
+  learningRoutes?: Router;
 };
 
 export function createApp(deps: AppDeps = {}) {
@@ -17,6 +19,7 @@ export function createApp(deps: AppDeps = {}) {
   });
 
   app.use('/v1/auth', deps.authRoutes ?? authRouter);
+  app.use('/v1/learning', deps.learningRoutes ?? learningRouter);
 
   app.use((_req, res) => {
     res.status(404).json({

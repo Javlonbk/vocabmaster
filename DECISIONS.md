@@ -46,3 +46,9 @@ This file logs technical and product decisions that are not fully specified in `
 - Added PostgreSQL Prisma schema with normalized `User`, `LevelTarget`, `Word`, and `UserWordState` models plus CEFR/word-state enums.
 - Added initial SQL migration and seed scaffold wired through Prisma seed command.
 - Rationale: establish DB foundation and indexes for session-by-level and forgotten-review queries.
+
+## 2026-02-21 — T004 auth API implementation approach
+- Added `bcryptjs` for password hashing and `jsonwebtoken` for signed auth tokens.
+- Added `supertest` for API route tests with Node test runner.
+- Added API route modularization (`createApp`, auth router, validation middleware, error helpers) to keep handlers testable and enforce standardized error responses.
+- Rationale: satisfy ticket requirements for secure password handling, shared-schema validation, and happy/invalid-path API tests.

@@ -57,6 +57,18 @@ Goal: quickly identify gaps in a target level (e.g., B2) and learn/refresh words
   ```
 
 
+
+## Auth API (T004)
+- Base path: `/v1/auth`
+- Endpoints:
+  - `POST /v1/auth/signup` body: `{ email, password }`
+  - `POST /v1/auth/login` body: `{ email, password }`
+- Success response: `{ token: string }`
+- Error response format: `{ error: { code, message, details? } }`
+- Required API env:
+  - `DATABASE_URL` (for Prisma)
+  - `AUTH_JWT_SECRET` (for signing tokens)
+
 ## Running the Mobile App (Expo Go)
 1. Start Metro from repo root:
    ```bash

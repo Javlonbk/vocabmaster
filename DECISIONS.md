@@ -30,3 +30,7 @@ This file logs technical and product decisions that are not fully specified in `
 ## 2026-02-21 — Align React Native patch version with Expo SDK 54 expectations
 - Updated `apps/mobile` dependency `react-native` from `0.81.4` to `0.81.5`.
 - Rationale: Expo SDK 54 runtime warns and recommends `0.81.5` for best compatibility.
+
+## 2026-02-21 — Use explicit mobile entrypoint in monorepo/workspace setup
+- Changed `apps/mobile` package `main` from `expo/AppEntry` to local `index.js` and added `apps/mobile/index.js` that registers `./App`.
+- Rationale: in workspace/hoisted installs, `expo/AppEntry` may resolve from the root `node_modules` and import `../../App` from the wrong directory, causing bundling failure.

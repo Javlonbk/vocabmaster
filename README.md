@@ -62,6 +62,8 @@ If Expo prints dependency mismatch warnings, run:
 npx expo install --fix
 ```
 
+For monorepo/workspace setups, this project uses `apps/mobile/index.js` as the explicit Expo entrypoint to avoid hoisted `node_modules` path resolution issues.
+
 ## How we build (Codex workflow)
 1) Read PROJECT_RULES.md
 2) Read relevant spec/* docs

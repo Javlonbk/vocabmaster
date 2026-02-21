@@ -52,3 +52,8 @@ This file logs technical and product decisions that are not fully specified in `
 - Added `supertest` for API route tests with Node test runner.
 - Added API route modularization (`createApp`, auth router, validation middleware, error helpers) to keep handlers testable and enforce standardized error responses.
 - Rationale: satisfy ticket requirements for secure password handling, shared-schema validation, and happy/invalid-path API tests.
+
+## 2026-02-21 — T005 mobile auth flow uses local screen switching
+- Implemented Login/Signup/Home screens in `apps/mobile` with typed auth client integration.
+- Used in-app mode switching and authenticated conditional rendering instead of adding a navigation library at this stage.
+- Rationale: satisfy T005 flow requirements with minimal dependencies and keep foundation lightweight for subsequent MVP tickets.

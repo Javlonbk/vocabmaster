@@ -58,6 +58,14 @@ Goal: quickly identify gaps in a target level (e.g., B2) and learn/refresh words
 
 
 
+
+## Mobile Auth Flow (T005)
+- The mobile app includes:
+  - `LoginScreen`
+  - `SignupScreen`
+  - `HomeScreen` (shown after successful auth)
+- API base URL for mobile auth client defaults to `http://localhost:3000`; when testing on a physical device, replace with your machine LAN IP in `apps/mobile/src/api/auth-client.ts`.
+
 ## Auth API (T004)
 - Base path: `/v1/auth`
 - Endpoints:

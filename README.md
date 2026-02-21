@@ -40,6 +40,28 @@ Goal: quickly identify gaps in a target level (e.g., B2) and learn/refresh words
   npm run build --workspace @vocabmaster/shared
   ```
 
+
+## Running the Mobile App (Expo Go)
+1. Start Metro from repo root:
+   ```bash
+   npm run dev --workspace @vocabmaster/mobile
+   ```
+2. Install **Expo Go** on your phone.
+3. Ensure phone and computer are on the same Wi-Fi network.
+4. Scan the QR code shown in terminal:
+   - Android: from Expo Go app
+   - iOS: from Camera app
+5. Useful keyboard controls in terminal:
+   - `a` open Android emulator
+   - `w` open web build
+   - `r` reload app
+   - `m` open dev menu
+
+If Expo prints dependency mismatch warnings, run:
+```bash
+npx expo install --fix
+```
+
 ## How we build (Codex workflow)
 1) Read PROJECT_RULES.md
 2) Read relevant spec/* docs

@@ -26,3 +26,7 @@ This file logs technical and product decisions that are not fully specified in `
 - Shared package runtime validation dependency: Zod.
 - Linting: ESLint with TypeScript + React plugins at the workspace root.
 - Rationale: satisfy T001 requirements with broadly adopted defaults that match `PROJECT_RULES.md` stack constraints and keep all packages runnable with strict TypeScript.
+
+## 2026-02-21 — Align React Native patch version with Expo SDK 54 expectations
+- Updated `apps/mobile` dependency `react-native` from `0.81.4` to `0.81.5`.
+- Rationale: Expo SDK 54 runtime warns and recommends `0.81.5` for best compatibility.

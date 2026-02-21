@@ -18,3 +18,11 @@ This file logs technical and product decisions that are not fully specified in `
 ## 2026-02-21 — No additional libraries introduced at planning stage
 - No runtime/build dependencies were added in this change.
 - Rationale: this PR focuses on planning/scaffolding only.
+
+## 2026-02-21 — T001 foundation tooling choices
+- Package manager/workspaces: npm workspaces at repository root.
+- API framework: Express for a minimal HTTP service baseline.
+- Mobile baseline: Expo + React Native TypeScript starter structure.
+- Shared package runtime validation dependency: Zod.
+- Linting: ESLint with TypeScript + React plugins at the workspace root.
+- Rationale: satisfy T001 requirements with broadly adopted defaults that match `PROJECT_RULES.md` stack constraints and keep all packages runnable with strict TypeScript.

@@ -12,6 +12,34 @@ Goal: quickly identify gaps in a target level (e.g., B2) and learn/refresh words
 - DECISIONS.md — architectural/product decisions log
 - PROJECT_RULES.md — rules Codex must follow
 
+## Getting Started
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run type checks across all workspaces:
+   ```bash
+   npm run typecheck
+   ```
+3. Run lint across all workspaces:
+   ```bash
+   npm run lint
+   ```
+
+## Development Commands
+- Start API:
+  ```bash
+  npm run dev --workspace @vocabmaster/api
+  ```
+- Start mobile app:
+  ```bash
+  npm run dev --workspace @vocabmaster/mobile
+  ```
+- Build shared package:
+  ```bash
+  npm run build --workspace @vocabmaster/shared
+  ```
+
 ## How we build (Codex workflow)
 1) Read PROJECT_RULES.md
 2) Read relevant spec/* docs

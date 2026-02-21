@@ -34,3 +34,15 @@ This file logs technical and product decisions that are not fully specified in `
 ## 2026-02-21 — Use explicit mobile entrypoint in monorepo/workspace setup
 - Changed `apps/mobile` package `main` from `expo/AppEntry` to local `index.js` and added `apps/mobile/index.js` that registers `./App`.
 - Rationale: in workspace/hoisted installs, `expo/AppEntry` may resolve from the root `node_modules` and import `../../App` from the wrong directory, causing bundling failure.
+
+## 2026-02-21 — T002 shared schema module boundaries
+- Added separate schema modules in `packages/shared/src` for auth, level selection, word state, and session summary.
+- Added cross-field validation on session summary to enforce count and results consistency.
+- Added Node test runner coverage for valid and invalid payloads.
+- Rationale: keep API/mobile contracts centralized and strictly inferred from Zod.
+
+## 2026-02-21 — T003 Prisma stack in API workspace
+- Added `prisma` and `@prisma/client` dependencies in `apps/api`.
+- Added PostgreSQL Prisma schema with normalized `User`, `LevelTarget`, `Word`, and `UserWordState` models plus CEFR/word-state enums.
+- Added initial SQL migration and seed scaffold wired through Prisma seed command.
+- Rationale: establish DB foundation and indexes for session-by-level and forgotten-review queries.

@@ -1,0 +1,82 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum CefrLevel {
+  A1
+  A2
+  B1
+  B2
+  C1
+  C2
+}
+
+enum WordState {
+  Known
+  Learning
+  Forgotten
+}
+
+model User {
+  id           String        @id @default(uuid())
+  email        String        @unique
+  passwordHash String
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  levelTarget  LevelTarget?
+  wordStates   UserWordState[]
+
+  @@map("users")
+}
+
+model LevelTarget {
+  id        String    @id @default(uuid())
+  userId    String    @unique
+  level     CefrLevel
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([level])
+  @@map("level_targets")
+}
+
+model Word {
+  id        String          @id @default(uuid())
+  text      String
+  meaning   String
+  level     CefrLevel
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+  wordStates UserWordState[]
+
+  @@unique([text, level])
+  @@index([level])
+  @@map("words")
+}
+
+model UserWordState {
+  id               String    @id @default(uuid())
+  userId           String
+  wordId           String
+  state            WordState
+  reviewCount      Int       @default(0)
+  forgottenCount   Int       @default(0)
+  lastReviewedAt   DateTime?
+  nextReviewAt     DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word             Word      @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, wordId])
+  @@index([userId, state, lastReviewedAt(sort: Asc)])
+  @@index([userId, state, nextReviewAt(sort: Asc)])
+  @@index([wordId])
+  @@map("user_word_states")
+}

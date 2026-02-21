@@ -39,6 +39,22 @@ Goal: quickly identify gaps in a target level (e.g., B2) and learn/refresh words
   ```bash
   npm run build --workspace @vocabmaster/shared
   ```
+- Run shared schema tests:
+  ```bash
+  npm run test --workspace @vocabmaster/shared
+  ```
+- Generate Prisma client:
+  ```bash
+  npm run prisma:generate --workspace @vocabmaster/api
+  ```
+- Apply initial Prisma migration:
+  ```bash
+  npm run prisma:migrate --workspace @vocabmaster/api
+  ```
+- Run Prisma seed scaffold:
+  ```bash
+  npm run prisma:seed --workspace @vocabmaster/api
+  ```
 
 
 ## Running the Mobile App (Expo Go)

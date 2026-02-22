@@ -1,4 +1,8 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text } from 'react-native';
+
+import { COLORS, RADII } from '../styles/theme';
+import { Screen } from '../components/ui/screen';
+import { Card } from '../components/ui/card';
 
 type SessionSummaryScreenProps = {
   known: number;
@@ -11,21 +15,24 @@ export function SessionSummaryScreen({ known, learning, forgotten, onBackHome }:
   const total = known + learning + forgotten;
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Session Summary</Text>
-      <Text style={styles.stat}>Total: {total}</Text>
-      <Text style={styles.stat}>Known: {known}</Text>
-      <Text style={styles.stat}>Learning: {learning}</Text>
-      <Text style={styles.stat}>Forgotten: {forgotten}</Text>
-      <Pressable style={styles.button} onPress={onBackHome}><Text style={styles.buttonText}>Back to Home</Text></Pressable>
-    </View>
+    <Screen contentStyle={styles.container}>
+      <Card style={styles.card}>
+        <Text style={styles.title}>Session Summary</Text>
+        <Text style={styles.stat}>Total: {total}</Text>
+        <Text style={styles.stat}>Known: {known}</Text>
+        <Text style={styles.stat}>Learning: {learning}</Text>
+        <Text style={styles.stat}>Forgotten: {forgotten}</Text>
+        <Pressable style={styles.button} onPress={onBackHome}><Text style={styles.buttonText}>Back to Home</Text></Pressable>
+      </Card>
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { width: '100%', alignItems: 'center', gap: 10 },
-  title: { fontSize: 28, fontWeight: '700' },
-  stat: { color: '#222' },
-  button: { backgroundColor: '#111', borderRadius: 8, padding: 12, minWidth: 220, alignItems: 'center', marginTop: 10 },
+  container: { flex: 1, width: '100%', alignItems: 'center', justifyContent: 'center', gap: 10 },
+  card: { width: '100%', alignItems: 'center', gap: 10 },
+  title: { fontSize: 28, fontWeight: '700', color: COLORS.text },
+  stat: { color: COLORS.textMuted },
+  button: { backgroundColor: COLORS.primary, borderRadius: RADII.input, padding: 12, minWidth: 220, alignItems: 'center', marginTop: 10 },
   buttonText: { color: '#fff', fontWeight: '600' }
 });

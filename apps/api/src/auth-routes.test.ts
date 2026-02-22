@@ -4,8 +4,8 @@ import test from 'node:test';
 import request from 'supertest';
 
 import { createApp } from './app';
-import { createAuthRouter } from './auth-routes';
-import { ApiError } from './errors';
+import { createAuthRouter } from './routes/auth-routes';
+import { ApiError } from './utils/errors';
 
 test('POST /v1/auth/signup returns token on valid payload', async () => {
   const app = createApp({

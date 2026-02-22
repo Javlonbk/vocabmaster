@@ -1,7 +1,6 @@
 import type { CefrLevel, WordState } from '../types/shared';
 import type { ForgottenWord, LearningWord, ProgressStats } from '../types/learning';
-
-const API_BASE_URL = 'http://localhost:3000';
+import { API_BASE_URL } from '../config/api';
 
 async function request<T>(token: string, path: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE_URL}${path}`, {
@@ -38,8 +37,9 @@ export async function setTargetLevel(token: string, level: CefrLevel): Promise<{
   });
 }
 
-export async function getSessionWords(token: string, count = 20): Promise<{ words: LearningWord[] }> {
-  return request<{ words: LearningWord[] }>(token, `/v1/learning/session/words?count=${count}`);
+export async function getSessionWords(token: string, count = 20, topic?: string): Promise<{ words: LearningWord[] }> {
+  const topicParam = topic ? `&topic=${encodeURIComponent(topic)}` : '';
+  return request<{ words: LearningWord[] }>(token, `/v1/learning/session/words?count=${count}${topicParam}`);
 }
 
 export async function updateWordState(token: string, wordId: string, state: WordState): Promise<void> {
@@ -51,4 +51,8 @@ export async function updateWordState(token: string, wordId: string, state: Word
 
 export async function getForgottenQueue(token: string, count = 20): Promise<{ words: ForgottenWord[] }> {
   return request<{ words: ForgottenWord[] }>(token, `/v1/learning/review/forgotten?count=${count}`);
+}
+
+export async function getReviewQueue(token: string, count = 20): Promise<{ words: LearningWord[] }> {
+  return request<{ words: LearningWord[] }>(token, `/v1/learning/review/queue?count=${count}`);
 }

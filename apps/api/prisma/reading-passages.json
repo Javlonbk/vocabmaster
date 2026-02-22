@@ -1,0 +1,92 @@
+[
+  {
+    "id": "reading-a1-1",
+    "title": "A Morning at Home",
+    "content": "In the <vocab>morning</vocab>, I wake up in my <vocab>house</vocab>. I read a <vocab>book</vocab> and drink <vocab>water</vocab>. My <vocab>friend</vocab> visits and we feel <vocab>happy</vocab>.",
+    "level": "A1",
+    "topic": "Daily Life",
+    "estimatedMinutes": 2,
+    "vocabularyWords": ["morning", "house", "book", "water", "friend", "happy"]
+  },
+  {
+    "id": "reading-a1-2",
+    "title": "A School Day",
+    "content": "I <vocab>go</vocab> to <vocab>school</vocab> early. I carry a <vocab>book</vocab> in my <vocab>small</vocab> bag. In class, my <vocab>friend</vocab> sits beside me.",
+    "level": "A1",
+    "topic": "Education",
+    "estimatedMinutes": 2,
+    "vocabularyWords": ["go", "school", "book", "small", "friend"]
+  },
+  {
+    "id": "reading-a2-1",
+    "title": "Weekend Trip Plan",
+    "content": "We want to <vocab>travel</vocab> this weekend. I bought a <vocab>ticket</vocab> online and packed quickly. We will eat at a <vocab>restaurant</vocab> and visit the local <vocab>market</vocab>.",
+    "level": "A2",
+    "topic": "Travel & Transportation",
+    "estimatedMinutes": 3,
+    "vocabularyWords": ["travel", "ticket", "restaurant", "market"]
+  },
+  {
+    "id": "reading-a2-2",
+    "title": "Healthy Routine",
+    "content": "Every day I <vocab>exercise</vocab> and drink <vocab>water</vocab>. I <vocab>eat</vocab> a light dinner and visit the <vocab>doctor</vocab> for a checkup each year. My favorite <vocab>hobby</vocab> is walking.",
+    "level": "A2",
+    "topic": "Health & Medicine",
+    "estimatedMinutes": 3,
+    "vocabularyWords": ["exercise", "water", "eat", "doctor", "hobby"]
+  },
+  {
+    "id": "reading-b1-1",
+    "title": "Budget Meeting",
+    "content": "The team reviewed the <vocab>schedule</vocab> and made a <vocab>decision</vocab> about the <vocab>budget</vocab>. Her <vocab>advice</vocab> gave us <vocab>energy</vocab> to finish the plan.",
+    "level": "B1",
+    "topic": "Business",
+    "estimatedMinutes": 3,
+    "vocabularyWords": ["schedule", "decision", "budget", "advice", "energy"]
+  },
+  {
+    "id": "reading-b1-2",
+    "title": "A Calm Journey",
+    "content": "The <vocab>journey</vocab> was long, <vocab>although</vocab> the <vocab>weather</vocab> stayed clear. We talked about the <vocab>environment</vocab> and stayed <vocab>patient</vocab> during delays.",
+    "level": "B1",
+    "topic": "Nature & Environment",
+    "estimatedMinutes": 3,
+    "vocabularyWords": ["journey", "although", "weather", "environment", "patient"]
+  },
+  {
+    "id": "reading-b2-1",
+    "title": "Project Analysis",
+    "content": "We <vocab>analyze</vocab> results to solve a <vocab>complex</vocab> issue. An <vocab>efficient</vocab> system must be <vocab>reliable</vocab>, and the report provides <vocab>evidence</vocab> for our choice.",
+    "level": "B2",
+    "topic": "Technology",
+    "estimatedMinutes": 4,
+    "vocabularyWords": ["analyze", "complex", "efficient", "reliable", "evidence"]
+  },
+  {
+    "id": "reading-b2-2",
+    "title": "Strategy Session",
+    "content": "The manager set a new <vocab>strategy</vocab> and asked us to <vocab>negotiate</vocab> with partners. Her words had <vocab>influence</vocab>, and the <vocab>significant</vocab> goal felt <vocab>ambitious</vocab> but possible.",
+    "level": "B2",
+    "topic": "Work",
+    "estimatedMinutes": 4,
+    "vocabularyWords": ["strategy", "negotiate", "influence", "significant", "ambitious"]
+  },
+  {
+    "id": "reading-c1-1",
+    "title": "Sustainable Innovation",
+    "content": "True <vocab>innovation</vocab> should be <vocab>sustainable</vocab>. Teams <vocab>transform</vocab> products and <vocab>enhance</vocab> systems, then <vocab>evaluate</vocab> results with <vocab>meticulous</vocab> care.",
+    "level": "C1",
+    "topic": "Technology",
+    "estimatedMinutes": 4,
+    "vocabularyWords": ["innovation", "sustainable", "transform", "enhance", "evaluate", "meticulous"]
+  },
+  {
+    "id": "reading-c2-1",
+    "title": "The Paradox of Art",
+    "content": "The <vocab>paradox</vocab> of art is that a <vocab>quintessential</vocab> piece can still feel <vocab>ambivalent</vocab>. Critics <vocab>juxtapose</vocab> styles and try to <vocab>elucidate</vocab> the <vocab>conundrum</vocab>, yet the result can be <vocab>ineffable</vocab> and <vocab>ephemeral</vocab>.",
+    "level": "C2",
+    "topic": "Arts & Culture",
+    "estimatedMinutes": 5,
+    "vocabularyWords": ["paradox", "quintessential", "ambivalent", "juxtapose", "elucidate", "conundrum", "ineffable", "ephemeral"]
+  }
+]

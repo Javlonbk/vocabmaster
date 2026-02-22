@@ -12,12 +12,16 @@
     "test": "node --import tsx --test src/**/*.test.ts",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:seed": "prisma db seed"
+    "prisma:reset": "prisma migrate reset",
+    "preprisma:seed": "npm run build --workspace @vocabmaster/shared",
+    "prisma:seed": "prisma db seed",
+    "vocab:import": "tsx src/cli/import-vocabulary.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.16.3",
     "@vocabmaster/shared": "0.1.0",
     "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2"
   },
@@ -25,6 +29,7 @@
     "@types/express": "^5.0.3",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.3.1",
+    "@types/cors": "^2.8.17",
     "@types/supertest": "^6.0.3",
     "prisma": "^6.16.3",
     "supertest": "^7.1.4",

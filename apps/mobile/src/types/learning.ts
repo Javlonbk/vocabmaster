@@ -6,12 +6,18 @@ export type ProgressStats = {
   known: number;
   learning: number;
   forgotten: number;
+  dueReviewCount: number;
 };
 
 export type LearningWord = {
   id: string;
   text: string;
   meaning: string;
+  phonetic: string;
+  audio: string;
+  example: string;
+  topic: string;
+  partOfSpeech: string;
   level: CefrLevel;
   state: WordState | null;
 };
@@ -20,6 +26,11 @@ export type ForgottenWord = {
   id: string;
   text: string;
   meaning: string;
+  phonetic: string;
+  audio: string;
+  example: string;
+  topic: string;
+  partOfSpeech: string;
   level: CefrLevel;
   lastReviewedAt: string | null;
 };

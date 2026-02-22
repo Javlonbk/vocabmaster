@@ -1,0 +1,642 @@
+[
+  {
+    "word": "book",
+    "phonetic": "/bʊk/",
+    "audio": "tts:book",
+    "definition": "A set of printed pages bound together.",
+    "example": "She opened a book to study.",
+    "level": "A1",
+    "topic": "Education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "audio": "tts:house",
+    "definition": "A building where people live.",
+    "example": "Their house has a small garden.",
+    "level": "A1",
+    "topic": "Daily Life",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔːtər/",
+    "audio": "tts:water",
+    "definition": "A clear liquid that people drink.",
+    "example": "Please drink a glass of water.",
+    "level": "A1",
+    "topic": "Health & Medicine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "eat",
+    "phonetic": "/iːt/",
+    "audio": "tts:eat",
+    "definition": "To put food in your mouth and swallow it.",
+    "example": "We eat dinner at six.",
+    "level": "A1",
+    "topic": "Food & Dining",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "go",
+    "phonetic": "/ɡoʊ/",
+    "audio": "tts:go",
+    "definition": "To move from one place to another.",
+    "example": "They go to work by bus.",
+    "level": "A1",
+    "topic": "Travel & Transportation",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "happy",
+    "phonetic": "/ˈhæpi/",
+    "audio": "tts:happy",
+    "definition": "Feeling pleased or joyful.",
+    "example": "She is happy with her test result.",
+    "level": "A1",
+    "topic": "Emotions & Feelings",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "small",
+    "phonetic": "/smɔːl/",
+    "audio": "tts:small",
+    "definition": "Not large in size.",
+    "example": "He lives in a small apartment.",
+    "level": "A1",
+    "topic": "Daily Life",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "morning",
+    "phonetic": "/ˈmɔːrnɪŋ/",
+    "audio": "tts:morning",
+    "definition": "The early part of the day.",
+    "example": "I walk in the morning before work.",
+    "level": "A1",
+    "topic": "Time & Dates",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "friend",
+    "phonetic": "/frɛnd/",
+    "audio": "tts:friend",
+    "definition": "A person you like and trust.",
+    "example": "My friend helped me move.",
+    "level": "A1",
+    "topic": "Daily Life",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "audio": "tts:school",
+    "definition": "A place where people learn.",
+    "example": "Their child starts school in September.",
+    "level": "A1",
+    "topic": "Education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "wow",
+    "phonetic": "/waʊ/",
+    "audio": "tts:wow",
+    "definition": "Used to show surprise or admiration.",
+    "example": "Wow, that is an amazing view!",
+    "level": "A1",
+    "topic": "Emotions & Feelings",
+    "partOfSpeech": "interjection"
+  },
+  {
+    "word": "travel",
+    "phonetic": "/ˈtrævəl/",
+    "audio": "tts:travel",
+    "definition": "To go from one place to another, often far away.",
+    "example": "We travel abroad every summer.",
+    "level": "A2",
+    "topic": "Travel & Transportation",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "ticket",
+    "phonetic": "/ˈtɪkɪt/",
+    "audio": "tts:ticket",
+    "definition": "A paper or digital pass that allows entry or travel.",
+    "example": "She bought a train ticket online.",
+    "level": "A2",
+    "topic": "Travel & Transportation",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "restaurant",
+    "phonetic": "/ˈrɛst(ə)rɒnt/",
+    "audio": "tts:restaurant",
+    "definition": "A place where people pay to eat meals.",
+    "example": "They met at a restaurant near the station.",
+    "level": "A2",
+    "topic": "Food & Dining",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "doctor",
+    "phonetic": "/ˈdɒktər/",
+    "audio": "tts:doctor",
+    "definition": "A person trained to treat illness.",
+    "example": "He visited the doctor for a checkup.",
+    "level": "A2",
+    "topic": "Health & Medicine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "message",
+    "phonetic": "/ˈmɛsɪdʒ/",
+    "audio": "tts:message",
+    "definition": "Information sent to someone.",
+    "example": "I left you a message yesterday.",
+    "level": "A2",
+    "topic": "Technology",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "computer",
+    "phonetic": "/kəmˈpjuːtər/",
+    "audio": "tts:computer",
+    "definition": "An electronic device for storing and processing data.",
+    "example": "She uses a computer at work.",
+    "level": "A2",
+    "topic": "Technology",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "market",
+    "phonetic": "/ˈmɑːrkɪt/",
+    "audio": "tts:market",
+    "definition": "A place where goods are bought and sold.",
+    "example": "He bought vegetables at the market.",
+    "level": "A2",
+    "topic": "Daily Life",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "exercise",
+    "phonetic": "/ˈɛksərsaɪz/",
+    "audio": "tts:exercise",
+    "definition": "Physical activity to improve health.",
+    "example": "She does exercise every morning.",
+    "level": "A2",
+    "topic": "Health & Medicine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "hobby",
+    "phonetic": "/ˈhɒbi/",
+    "audio": "tts:hobby",
+    "definition": "An activity you do for pleasure.",
+    "example": "Photography is his hobby.",
+    "level": "A2",
+    "topic": "Sports & Hobbies",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "weather",
+    "phonetic": "/ˈwɛðər/",
+    "audio": "tts:weather",
+    "definition": "The conditions of the air, such as rain or sun.",
+    "example": "The weather is cold today.",
+    "level": "A2",
+    "topic": "Nature & Environment",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "quickly",
+    "phonetic": "/ˈkwɪkli/",
+    "audio": "tts:quickly",
+    "definition": "At a fast speed.",
+    "example": "She finished the task quickly.",
+    "level": "A2",
+    "topic": "Work",
+    "partOfSpeech": "adverb"
+  },
+  {
+    "word": "between",
+    "phonetic": "/bɪˈtwiːn/",
+    "audio": "tts:between",
+    "definition": "In the space separating two things.",
+    "example": "The cafe is between the bank and the library.",
+    "level": "A2",
+    "topic": "Daily Life",
+    "partOfSpeech": "preposition"
+  },
+  {
+    "word": "improve",
+    "phonetic": "/ɪmˈpruːv/",
+    "audio": "tts:improve",
+    "definition": "To make something better.",
+    "example": "She wants to improve her English.",
+    "level": "B1",
+    "topic": "Education",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "culture",
+    "phonetic": "/ˈkʌltʃər/",
+    "audio": "tts:culture",
+    "definition": "The customs and ideas of a group of people.",
+    "example": "They learned about local culture.",
+    "level": "B1",
+    "topic": "Arts & Culture",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "schedule",
+    "phonetic": "/ˈskɛdʒuːl/",
+    "audio": "tts:schedule",
+    "definition": "A plan of activities with times.",
+    "example": "His schedule is busy this week.",
+    "level": "B1",
+    "topic": "Work",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "decision",
+    "phonetic": "/dɪˈsɪʒən/",
+    "audio": "tts:decision",
+    "definition": "A choice made after thinking.",
+    "example": "She made a decision to move.",
+    "level": "B1",
+    "topic": "Business",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "energy",
+    "phonetic": "/ˈɛnərdʒi/",
+    "audio": "tts:energy",
+    "definition": "Power to do work or be active.",
+    "example": "He has a lot of energy after breakfast.",
+    "level": "B1",
+    "topic": "Health & Medicine",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "patient",
+    "phonetic": "/ˈpeɪʃənt/",
+    "audio": "tts:patient",
+    "definition": "Able to wait calmly.",
+    "example": "Please be patient while we fix it.",
+    "level": "B1",
+    "topic": "Emotions & Feelings",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "journey",
+    "phonetic": "/ˈdʒɜːrni/",
+    "audio": "tts:journey",
+    "definition": "A trip from one place to another.",
+    "example": "The journey took three hours.",
+    "level": "B1",
+    "topic": "Travel & Transportation",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "budget",
+    "phonetic": "/ˈbʌdʒɪt/",
+    "audio": "tts:budget",
+    "definition": "A plan for how to spend money.",
+    "example": "We set a budget for the trip.",
+    "level": "B1",
+    "topic": "Business",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "advice",
+    "phonetic": "/ədˈvaɪs/",
+    "audio": "tts:advice",
+    "definition": "An opinion about what someone should do.",
+    "example": "Her advice helped me decide.",
+    "level": "B1",
+    "topic": "Daily Life",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "environment",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "audio": "tts:environment",
+    "definition": "The natural world around us.",
+    "example": "We should protect the environment.",
+    "level": "B1",
+    "topic": "Nature & Environment",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "although",
+    "phonetic": "/ɔːlˈðoʊ/",
+    "audio": "tts:although",
+    "definition": "Despite the fact that.",
+    "example": "Although it rained, they went hiking.",
+    "level": "B1",
+    "topic": "Nature & Environment",
+    "partOfSpeech": "conjunction"
+  },
+  {
+    "word": "analyze",
+    "phonetic": "/ˈænəlaɪz/",
+    "audio": "tts:analyze",
+    "definition": "To examine something carefully.",
+    "example": "They analyze the results in class.",
+    "level": "B2",
+    "topic": "Education",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "negotiate",
+    "phonetic": "/nɪˈɡoʊʃieɪt/",
+    "audio": "tts:negotiate",
+    "definition": "To discuss in order to reach an agreement.",
+    "example": "They negotiate the contract terms.",
+    "level": "B2",
+    "topic": "Business",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "efficient",
+    "phonetic": "/ɪˈfɪʃənt/",
+    "audio": "tts:efficient",
+    "definition": "Working well without wasting time or energy.",
+    "example": "Her system is efficient and fast.",
+    "level": "B2",
+    "topic": "Work",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "reliable",
+    "phonetic": "/rɪˈlaɪəbəl/",
+    "audio": "tts:reliable",
+    "definition": "Able to be trusted.",
+    "example": "He is a reliable teammate.",
+    "level": "B2",
+    "topic": "Work",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "complex",
+    "phonetic": "/ˈkɒmplɛks/",
+    "audio": "tts:complex",
+    "definition": "Made of many connected parts.",
+    "example": "The problem is complex and needs time.",
+    "level": "B2",
+    "topic": "Technology",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "ambitious",
+    "phonetic": "/æmˈbɪʃəs/",
+    "audio": "tts:ambitious",
+    "definition": "Wanting to achieve success.",
+    "example": "She is ambitious about her career.",
+    "level": "B2",
+    "topic": "Business",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "strategy",
+    "phonetic": "/ˈstrætədʒi/",
+    "audio": "tts:strategy",
+    "definition": "A plan to achieve a goal.",
+    "example": "The team changed its strategy.",
+    "level": "B2",
+    "topic": "Business",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "influence",
+    "phonetic": "/ˈɪnfluəns/",
+    "audio": "tts:influence",
+    "definition": "The power to affect something.",
+    "example": "Her words had a strong influence.",
+    "level": "B2",
+    "topic": "Emotions & Feelings",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "evidence",
+    "phonetic": "/ˈɛvɪdəns/",
+    "audio": "tts:evidence",
+    "definition": "Information that shows something is true.",
+    "example": "The report provides evidence of change.",
+    "level": "B2",
+    "topic": "Education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "significant",
+    "phonetic": "/sɪɡˈnɪfɪkənt/",
+    "audio": "tts:significant",
+    "definition": "Important or meaningful.",
+    "example": "There was a significant increase in sales.",
+    "level": "B2",
+    "topic": "Business",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "advocate",
+    "phonetic": "/ˈædvəkeɪt/",
+    "audio": "tts:advocate",
+    "definition": "To publicly support a cause.",
+    "example": "They advocate for better education.",
+    "level": "C1",
+    "topic": "Education",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "coherent",
+    "phonetic": "/koʊˈhɪrənt/",
+    "audio": "tts:coherent",
+    "definition": "Clear and logical.",
+    "example": "She gave a coherent explanation.",
+    "level": "C1",
+    "topic": "Education",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɒθəsɪs/",
+    "audio": "tts:hypothesis",
+    "definition": "An idea to be tested by research.",
+    "example": "The experiment tested their hypothesis.",
+    "level": "C1",
+    "topic": "Technology",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "innovation",
+    "phonetic": "/ˌɪnəˈveɪʃən/",
+    "audio": "tts:innovation",
+    "definition": "A new idea or method.",
+    "example": "Innovation drives the industry forward.",
+    "level": "C1",
+    "topic": "Technology",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "perception",
+    "phonetic": "/pərˈsɛpʃən/",
+    "audio": "tts:perception",
+    "definition": "The way someone understands something.",
+    "example": "Her perception of the issue changed.",
+    "level": "C1",
+    "topic": "Emotions & Feelings",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "sustainable",
+    "phonetic": "/səˈsteɪnəbəl/",
+    "audio": "tts:sustainable",
+    "definition": "Able to continue without harming the environment.",
+    "example": "They chose sustainable materials.",
+    "level": "C1",
+    "topic": "Nature & Environment",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "transform",
+    "phonetic": "/trænsˈfɔːrm/",
+    "audio": "tts:transform",
+    "definition": "To change form or appearance.",
+    "example": "Digital tools can transform the workflow.",
+    "level": "C1",
+    "topic": "Work",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "meticulous",
+    "phonetic": "/məˈtɪkjʊləs/",
+    "audio": "tts:meticulous",
+    "definition": "Very careful and precise.",
+    "example": "He is meticulous about details.",
+    "level": "C1",
+    "topic": "Work",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "evaluate",
+    "phonetic": "/ɪˈvæljueɪt/",
+    "audio": "tts:evaluate",
+    "definition": "To judge the quality of something.",
+    "example": "They evaluate each candidate.",
+    "level": "C1",
+    "topic": "Business",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "enhance",
+    "phonetic": "/ɪnˈhæns/",
+    "audio": "tts:enhance",
+    "definition": "To improve or increase value.",
+    "example": "The update will enhance performance.",
+    "level": "C1",
+    "topic": "Technology",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "paradox",
+    "phonetic": "/ˈpærədɒks/",
+    "audio": "tts:paradox",
+    "definition": "A statement that seems contradictory but may be true.",
+    "example": "It is a paradox that less can be more.",
+    "level": "C2",
+    "topic": "Arts & Culture",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "paradigm",
+    "phonetic": "/ˈpærədaɪm/",
+    "audio": "tts:paradigm",
+    "definition": "A typical example or model.",
+    "example": "The new approach changed the paradigm.",
+    "level": "C2",
+    "topic": "Education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "quintessential",
+    "phonetic": "/ˌkwɪntɪˈsɛnʃəl/",
+    "audio": "tts:quintessential",
+    "definition": "The most perfect example of something.",
+    "example": "The cafe is the quintessential Parisian spot.",
+    "level": "C2",
+    "topic": "Arts & Culture",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "ubiquitous",
+    "phonetic": "/juːˈbɪkwɪtəs/",
+    "audio": "tts:ubiquitous",
+    "definition": "Present everywhere.",
+    "example": "Smartphones are ubiquitous now.",
+    "level": "C2",
+    "topic": "Technology",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "ambivalent",
+    "phonetic": "/æmˈbɪvələnt/",
+    "audio": "tts:ambivalent",
+    "definition": "Having mixed feelings.",
+    "example": "She felt ambivalent about the move.",
+    "level": "C2",
+    "topic": "Emotions & Feelings",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "elucidate",
+    "phonetic": "/ɪˈluːsɪdeɪt/",
+    "audio": "tts:elucidate",
+    "definition": "To make something clear.",
+    "example": "He asked her to elucidate the point.",
+    "level": "C2",
+    "topic": "Education",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "conundrum",
+    "phonetic": "/kəˈnʌndrəm/",
+    "audio": "tts:conundrum",
+    "definition": "A confusing and difficult problem.",
+    "example": "The puzzle presented a conundrum.",
+    "level": "C2",
+    "topic": "Education",
+    "partOfSpeech": "noun"
+  },
+  {
+    "word": "ineffable",
+    "phonetic": "/ɪnˈɛfəbəl/",
+    "audio": "tts:ineffable",
+    "definition": "Too great to be expressed in words.",
+    "example": "The view was ineffable.",
+    "level": "C2",
+    "topic": "Arts & Culture",
+    "partOfSpeech": "adjective"
+  },
+  {
+    "word": "juxtapose",
+    "phonetic": "/ˌdʒʌkstəˈpoʊz/",
+    "audio": "tts:juxtapose",
+    "definition": "To place things side by side for comparison.",
+    "example": "The artist juxtaposes light and shadow.",
+    "level": "C2",
+    "topic": "Arts & Culture",
+    "partOfSpeech": "verb"
+  },
+  {
+    "word": "ephemeral",
+    "phonetic": "/ɪˈfɛmərəl/",
+    "audio": "tts:ephemeral",
+    "definition": "Lasting for a very short time.",
+    "example": "Their fame was ephemeral.",
+    "level": "C2",
+    "topic": "Time & Dates",
+    "partOfSpeech": "adjective"
+  }
+]

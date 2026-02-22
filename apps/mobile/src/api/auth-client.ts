@@ -1,6 +1,5 @@
 import type { ApiErrorResponse, AuthRequest, AuthSuccessResponse } from '../types/auth';
-
-const API_BASE_URL = 'http://localhost:3000';
+import { API_BASE_URL } from '../config/api';
 
 function sanitizeErrorMessage(error: unknown): string {
   if (typeof error === 'object' && error !== null && 'message' in error && typeof error.message === 'string') {
@@ -11,13 +10,19 @@ function sanitizeErrorMessage(error: unknown): string {
 }
 
 async function sendAuthRequest(path: '/v1/auth/login' | '/v1/auth/signup', payload: AuthRequest): Promise<AuthSuccessResponse> {
-  const response = await fetch(`${API_BASE_URL}${path}`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(payload)
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${API_BASE_URL}${path}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+  } catch (error: unknown) {
+    console.warn('Auth request failed', { apiBaseUrl: API_BASE_URL, path, error });
+    throw new Error(`Network request failed. API: ${API_BASE_URL}`);
+  }
 
   const data = (await response.json()) as AuthSuccessResponse | ApiErrorResponse;
 

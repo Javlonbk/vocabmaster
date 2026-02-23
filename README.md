@@ -56,38 +56,6 @@ Goal: quickly identify gaps in a target level (e.g., B2) and learn/refresh words
   npm run prisma:seed --workspace @vocabmaster/api
   ```
 
-
-
-
-
-## Learning MVP Loop (T006)
-- API endpoints (`/v1/learning`, bearer auth required):
-  - `GET /target-level`
-  - `PUT /target-level`
-  - `GET /session/words?count=20`
-  - `PATCH /words/:wordId/state`
-  - `GET /review/forgotten?count=20`
-  - `GET /progress`
-- Mobile screens: `HomeScreen`, `LevelSelectScreen`, `SessionScreen`, `SessionSummaryScreen`, `ReviewForgottenScreen`.
-
-## Mobile Auth Flow (T005)
-- The mobile app includes:
-  - `LoginScreen`
-  - `SignupScreen`
-  - `HomeScreen` (shown after successful auth)
-- API base URL for mobile auth client defaults to `http://localhost:3000`; when testing on a physical device, replace with your machine LAN IP in `apps/mobile/src/api/auth-client.ts`.
-
-## Auth API (T004)
-- Base path: `/v1/auth`
-- Endpoints:
-  - `POST /v1/auth/signup` body: `{ email, password }`
-  - `POST /v1/auth/login` body: `{ email, password }`
-- Success response: `{ token: string }`
-- Error response format: `{ error: { code, message, details? } }`
-- Required API env:
-  - `DATABASE_URL` (for Prisma)
-  - `AUTH_JWT_SECRET` (for signing tokens)
-
 ## Running the Mobile App (Expo Go)
 1. Start Metro from repo root:
    ```bash

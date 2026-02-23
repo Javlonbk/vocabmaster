@@ -40,6 +40,3 @@ When implementing a ticket, output in this order:
 - React components: PascalCase
 - Functions/vars: camelCase
 - API routes: /v1/...
-
-## 8) Build Order (Do in this order)
-T001 foundation -> T002 shared schemas/types -> T003 DB schema -> T004 auth API -> T005 mobile auth -> T006 word learning MVP
